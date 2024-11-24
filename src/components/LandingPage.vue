@@ -70,8 +70,9 @@
     </div>
   
     <main>
+     <Features/>
+     <PricingSection/>
 
-     <Pricing/>
 
     </main>
 
@@ -79,11 +80,13 @@
   </template>
   
   <script>
-  import Pricing from './pricing-component.vue'
+  import PricingSection from './pricing-component.vue';
+  import Features from './features-component.vue';
+
   export default {
     name: 'LandingPage',
     components: {
-        Pricing,  
+        PricingSection, Features
     },
     props: {
       msg: String
@@ -96,7 +99,7 @@
     methods: {
       toggleMenu() {
         
-          this.isMenuOpen = !this.isMenuOpen; // Change l'état du menu
+          this.isMenuOpen = !this.isMenuOpen; 
          console.log('Menu toggled:', this.isMenuOpen);
       },
     },
