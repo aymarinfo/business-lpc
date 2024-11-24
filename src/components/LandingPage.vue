@@ -77,6 +77,7 @@
      <TestimonialsSection/>
      <PricingSection/>
      <ContactSection/>
+     <FooterSection/>
      
     </main>
 
@@ -90,12 +91,14 @@
   import ContactSection from './contact-section.vue';
    import TestimonialsSection from './testimonials-section.vue';
   import  PartnersSection from './partners-section.vue';
+  import  FooterSection from './footer-section.vue';
   
 
   export default {
     name: 'LandingPage',
     components: {
-        PricingSection, Features, LightSection, ContactSection, TestimonialsSection, PartnersSection
+        PricingSection, Features, LightSection, ContactSection, 
+        TestimonialsSection, PartnersSection, FooterSection
     },
     props: {
       msg: String
