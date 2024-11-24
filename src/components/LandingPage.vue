@@ -70,15 +70,21 @@
     </div>
   
     <main>
-     
+
+     <Pricing/>
+
     </main>
 
     </div>
   </template>
   
   <script>
+  import Pricing from './pricing-component.vue'
   export default {
     name: 'LandingPage',
+    components: {
+        Pricing,  
+    },
     props: {
       msg: String
     },
