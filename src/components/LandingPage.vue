@@ -73,7 +73,7 @@
      <Features/>
      <LightSection/>
 
-     
+     <PartnersSection/>
      <TestimonialsSection/>
      <PricingSection/>
      <ContactSection/>
@@ -89,12 +89,13 @@
   import LightSection from './light-section.vue';
   import ContactSection from './contact-section.vue';
    import TestimonialsSection from './testimonials-section.vue';
+  import  PartnersSection from './partners-section.vue';
   
 
   export default {
     name: 'LandingPage',
     components: {
-        PricingSection, Features, LightSection, ContactSection, TestimonialsSection
+        PricingSection, Features, LightSection, ContactSection, TestimonialsSection, PartnersSection
     },
     props: {
       msg: String
